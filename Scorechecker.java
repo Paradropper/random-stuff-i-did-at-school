@@ -20,6 +20,6 @@ public class Scorechecker{
             } else if (score > maxscore) {
                 System.out.println("Wow! You got " + (score-maxscore) + " points higher than the maximum score of  " + maxscore + "!\nDid you bribe the examiner?");
             }
-    // :>
+    // :> fklajlfsjkflsf
 }
 }
