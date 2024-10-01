@@ -11,7 +11,7 @@ public class Scorechecker {
 
         if (score == maxscore) {
             System.out.println("You Got a Perfect Score!!!");
-        } else if (score < (maxscore - 1) && score > 0) {
+        } else if (score < (maxscore - 1)) {
             System.out.println("You made " + (maxscore - score) + " mistakes. You can do better than that!");
         } else if (score == (maxscore - 1)) {
             System.out.println(
@@ -27,15 +27,17 @@ public class Scorechecker {
 String command = "";
 
 do {
-    System.out.print("Enter a command: ");
+    System.out.println("Do you want to know your percentage? (type 'yes' to know or 'quit' to exit): ");
     command = commands.nextLine();
 
-    if (command.equals("percentage")) {
+    if (command.equals("yes")) {
         System.out.println("You got " + String.format("%.2f", ((score / maxscore) * 100)) + "%");
     } else if (!command.equals("quit")) {
         System.out.println("unknown command.");
     }
 } while (!command.equals("quit"));
 System.out.print("Quitting...");
+
+    commands.close();
     }
 }
