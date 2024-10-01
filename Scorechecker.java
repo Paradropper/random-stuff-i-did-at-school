@@ -22,14 +22,20 @@ public class Scorechecker {
             System.out.println("Wow! You got " + (score - maxscore) + " points higher than the maximum score of  "
                     + maxscore + "!\nDid you bribe the examiner?");
         }
+        System.out.println("");
         Scanner commands = new Scanner(System.in);
-        System.out.print("Enter a command: ");
-        String command = commands.nextLine();
+String command = "";
 
-        if (command.equals("percentage")) {
-            System.out.print("You got " + String.format("%.2f", ((score / maxscore) * 100)) + "%");
-        } else {
-            System.out.print("unknown command.");
-        }
+do {
+    System.out.print("Enter a command: ");
+    command = commands.nextLine();
+
+    if (command.equals("percentage")) {
+        System.out.println("You got " + String.format("%.2f", ((score / maxscore) * 100)) + "%");
+    } else if (!command.equals("quit")) {
+        System.out.println("unknown command.");
+    }
+} while (!command.equals("quit"));
+System.out.print("Quitting...");
     }
 }
