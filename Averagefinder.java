@@ -19,5 +19,7 @@ public class Averagefinder {
         double average5 = scanner.nextDouble();
         System.out.print(
                 "The average is " + String.format("%.2f", (average1 + average2 + average3 + average4 + average5) / 5));
+
+scanner.close();
     }
 }
