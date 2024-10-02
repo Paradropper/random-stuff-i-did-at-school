@@ -22,5 +22,7 @@ while (execute > 0);
 
 double average = (double) sum/origexecute;
 System.out.println("The average is: " + average);
+
+sc1.close();
     }
 }
