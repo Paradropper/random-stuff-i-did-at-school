@@ -34,6 +34,8 @@ public class Greaterequalorlesser{
             System.out.println(" ");
     }
     } while (!command.equals("quit"));
-    }
+    in.close();
+    in2.close();
+}
     
 }

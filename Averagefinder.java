@@ -20,10 +20,9 @@ public class Averagefinder {
         System.out.print(
                 "The average is " + String.format("%.2f", (average1 + average2 + average3 + average4 + average5) / 5));
 
-<<<<<<< HEAD
         scanner.close();
-=======
+
 scanner.close();
->>>>>>> a82145b99b2bd8a55ccd791a5f644a598e88f74e
+
     }
 }
