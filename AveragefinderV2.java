@@ -23,7 +23,10 @@ while (execute > 0);
 double average = (double) sum/origexecute;
 System.out.println("The average is: " + average);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a82145b99b2bd8a55ccd791a5f644a598e88f74e
 sc1.close();
     }
 }
